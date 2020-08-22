@@ -55,8 +55,30 @@ tsc --version
     tsc --t ES5 main
     ```  
 
+- Put transpiler options in a file, `tsconfig.json`, in the *project* (root) directory. 
+
+    ```json
+    {
+        "compilerOptions" : {
+            "baseUrl": "src",
+            "outDir": "./dist",
+            "noEmitOnError": true,
+            "target": "es5",
+            "watch": true
+        }
+    }
+    ```
+
+  - *watch* directive causes recompilation on file change
+  - *extends* property allows configuration inheritance
+- Create a default `tsconfig.son`
+
+    ```bash
+    tsc --init
+    ```
+
 [1]: https://www.typescriptlang.org/docs/handbook/compiler-options.html
-[2]: https://www.typescriptlang.org/play?#code/Q
+[2]: https://www.typescriptlang.org/play/
 [3]: https://www.typescriptlang.org/
 [4]: https://github.com/Microsoft/TypeScript/wiki/Roadmap
 [5]: https://www.npmjs.com/package/typescript
