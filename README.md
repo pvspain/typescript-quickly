@@ -25,6 +25,8 @@ cat /etc/os-release | grep VERSION=
 - [Playground][2]
 - [Roadmap][4]
 - [Package homepage][5]
+- [Installable REPL][6]
+- [VS Code Typescript docs][7]
 
 ## Installation
 
@@ -82,3 +84,5 @@ tsc --version
 [3]: https://www.typescriptlang.org/
 [4]: https://github.com/Microsoft/TypeScript/wiki/Roadmap
 [5]: https://www.npmjs.com/package/typescript
+[6]: https://github.com/TypeStrong/ts-node
+[7]: https://code.visualstudio.com/docs/languages/typescript
